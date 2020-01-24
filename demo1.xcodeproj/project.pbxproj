@@ -13,10 +13,12 @@
 		AE86AE9723DACAD700E87555 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE86AE9523DACAD700E87555 /* Main.storyboard */; };
 		AE86AE9923DACAD700E87555 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE86AE9823DACAD700E87555 /* Assets.xcassets */; };
 		AE86AE9C23DACAD700E87555 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE86AE9A23DACAD700E87555 /* LaunchScreen.storyboard */; };
+		AE86AEA423DAD4F200E87555 /* Chatt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE86AEA323DAD4F200E87555 /* Chatt.swift */; };
+		AE86AEA623DAD51B00E87555 /* ChattTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE86AEA523DAD51B00E87555 /* ChattTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AE86AE8C23DACAD700E87555 /* demo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE86AE8C23DACAD700E87555 /* Chatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE86AE8F23DACAD700E87555 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE86AE9123DACAD700E87555 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AE86AE9323DACAD700E87555 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		AE86AE9823DACAD700E87555 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE86AE9B23DACAD700E87555 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE86AE9D23DACAD700E87555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE86AEA323DAD4F200E87555 /* Chatt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chatt.swift; sourceTree = "<group>"; };
+		AE86AEA523DAD51B00E87555 /* ChattTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +52,7 @@
 		AE86AE8D23DACAD700E87555 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE86AE8C23DACAD700E87555 /* demo1.app */,
+				AE86AE8C23DACAD700E87555 /* Chatter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +64,8 @@
 				AE86AE9123DACAD700E87555 /* SceneDelegate.swift */,
 				AE86AE9323DACAD700E87555 /* ViewController.swift */,
 				AE86AE9523DACAD700E87555 /* Main.storyboard */,
+				AE86AEA323DAD4F200E87555 /* Chatt.swift */,
+				AE86AEA523DAD51B00E87555 /* ChattTableCell.swift */,
 				AE86AE9823DACAD700E87555 /* Assets.xcassets */,
 				AE86AE9A23DACAD700E87555 /* LaunchScreen.storyboard */,
 				AE86AE9D23DACAD700E87555 /* Info.plist */,
@@ -84,7 +90,7 @@
 			);
 			name = demo1;
 			productName = demo1;
-			productReference = AE86AE8C23DACAD700E87555 /* demo1.app */;
+			productReference = AE86AE8C23DACAD700E87555 /* Chatter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE86AEA623DAD51B00E87555 /* ChattTableCell.swift in Sources */,
 				AE86AE9423DACAD700E87555 /* ViewController.swift in Sources */,
 				AE86AE9023DACAD700E87555 /* AppDelegate.swift in Sources */,
+				AE86AEA423DAD4F200E87555 /* Chatt.swift in Sources */,
 				AE86AE9223DACAD700E87555 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,9 +299,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = edu.umich.eecs441.demo1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Chatter;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,9 +316,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = edu.umich.eecs441.demo1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Chatter;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
